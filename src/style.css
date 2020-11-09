@@ -1,9 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+* {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
 /* Declaración de variables */
-
 :root {
-    --color-principal:rgba(245, 151, 98, 0.67);
+    --color-principal: rgba(245, 151, 98, 0.67);
     --color-secundario: rgba(168, 109, 76, 1);
-    --color-titulos:rgba(77, 121, 104, 0.87);
-    --sombra:rgba(225, 198, 157, 0.87);
-    --borde-MH-mobile:rgba(168, 109, 76, 1);
-  }
+    --color-titulos: rgba(77, 121, 104, 0.87);
+    --sombra: rgba(225, 198, 157, 0.87);
+    --borde-MH-mobile: rgba(168, 109, 76, 1);
+}
+/*estilos del nav*/
+nav {
+    margin: 0;
+    padding: 15px 5px;
+    background: var(--color-principal);
+}
+
+.nav-list-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left:0;
+}
+
+.nav-list-menu li {
+    list-style: none;
+    color: var(--color-secundario);
+}
+
+/* first-child representa al primer elemento en este caso del tag <li>*/
+
+li:first-child {
+    color: var(--color-titulos);
+    font-weight: bold;
+}
+
+/*nth-child(#) representa al elemento li en la posicion #*/
+
+li:nth-child(5) {
+    font-weight: lighter;
+    font-size: x-small;
+}

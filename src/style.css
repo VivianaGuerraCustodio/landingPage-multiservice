@@ -1,0 +1,9 @@
+/* Declaración de variables */
+
+:root {
+    --color-principal:rgba(245, 151, 98, 0.67);
+    --color-secundario: rgba(168, 109, 76, 1);
+    --color-titulos:rgba(77, 121, 104, 0.87);
+    --sombra:rgba(225, 198, 157, 0.87);
+    --borde-MH-mobile:rgba(168, 109, 76, 1);
+  }

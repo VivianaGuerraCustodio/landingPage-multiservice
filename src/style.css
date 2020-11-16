@@ -3,7 +3,9 @@
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
+
 /* Declaración de variables */
+
 :root {
     --color-principal: rgba(245, 151, 98, 0.67);
     --color-secundario: rgba(168, 109, 76, 1);
@@ -11,7 +13,14 @@
     --sombra: rgba(225, 198, 157, 0.87);
     --borde-MH-mobile: rgba(168, 109, 76, 1);
 }
+
+body, html {
+    box-sizing: border-box;
+    width: fit-content;
+}
+
 /*estilos del nav*/
+
 nav {
     margin: 0;
     padding: 15px 5px;
@@ -23,24 +32,112 @@ nav {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    padding-left:0;
+    padding-left: 0;
+    width: 100vh;
 }
 
 .nav-list-menu li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
     color: var(--color-secundario);
 }
 
 /* first-child representa al primer elemento en este caso del tag <li>*/
 
-li:first-child {
+.titulo {
     color: var(--color-titulos);
     font-weight: bold;
 }
 
 /*nth-child(#) representa al elemento li en la posicion #*/
 
-li:nth-child(5) {
+.motivo {
     font-weight: lighter;
     font-size: x-small;
+    color: var(--color-secundario);
+}
+
+.section {
+    border-top: 2px solid var(--color-secundario);
+    margin: 5px 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section p:nth-child(1) {
+    text-align: justify;
+    padding-left: 40px;
+    font-weight: bold;
+    color: var( --color-titulos);
+}
+
+.section p:nth-child(2) {
+    padding: 10px 40px;
+    text-align: justify;
+}
+
+iframe {
+    height: 31em;
+    width: 34em
+}
+
+#contacto p {
+    font-size: 9em;
+}
+
+.img-info {
+    width: 400px;
+    height: 300px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--color-principal);
+}
+
+footer p {
+    padding: 15px;
+    text-align: center;
+}
+
+.icons {
+    width: 40px;
+    height: 30px;
+}
+
+.direccion {
+    color: var(--color-secundario);
+}
+
+/*reutilizables*/
+
+.margin-top-bottom {
+    margin-top: 20px;
+}
+
+.row {
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.margin {
+    margin: 1rem;
 }

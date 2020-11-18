@@ -1,58 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {
     margin: 0;
+    padding: 0;
+    outline: none;
     font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 /* Declaración de variables */
 
 :root {
-    --color-principal: rgba(245, 151, 98, 0.67);
-    --color-secundario: rgba(168, 109, 76, 1);
-    --color-titulos: rgba(77, 121, 104, 0.87);
+    --color-principal: rgb(61, 61, 61);
+    --color-secundario: #a9a8a8;
+    --color-titulos: white;
     --sombra: rgba(225, 198, 157, 0.87);
     --borde-MH-mobile: rgba(168, 109, 76, 1);
 }
 
 body, html {
-    box-sizing: border-box;
-    width: fit-content;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*estilos del nav*/
 
-nav {
-    margin: 0;
-    padding: 15px 5px;
+.nav-menu {
     background: var(--color-principal);
+    height: 92px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    color: var(--color-titulos);
+    font-size: 20px;
+    padding: 0 35px;
+    font-weight: bold;
 }
 
 .nav-list-menu {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 0;
-    width: 100vh;
+    margin-right: 20px;
 }
 
 .nav-list-menu li {
-    list-style: none;
+    border-radius: 3px;
+    margin: 0 5px;
 }
 
-a {
-    text-decoration: none;
+.nav-list-menu li a {
     color: var(--color-secundario);
+    padding: 7px 13px;
+    font-size: 17px;
+    display: block;
 }
 
-/* first-child representa al primer elemento en este caso del tag <li>*/
+.nav-list-menu li a:hover {
+    padding: 38px 10px;
+    transition: 0.4s;
+    color: var(--color-titulos);
+    background: rgb(254, 143, 1);
+}
+
+.btn-menu {
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width:952px) {
+    .logo {
+        padding-left: 35px
+    }
+    .nav-list-menu li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    body {
+        width: 100vw;
+    }
+    .nav-menu {
+        height: 65px;
+    }
+    .btn-menu {
+        display: inline-flex;
+    }
+    .nav-list-menu {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% -65px);
+        background: var(--color-secundario);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 35px;
+    }
+    .nav-list-menu li {
+        margin: 30px 0 0 0;
+        line-height: 60px;
+    }
+    .nav-list-menu li .motivo {
+        color: var(--color-titulos);
+        font-weight: bold;
+        font-size: inherit;
+        padding-left: 37px;
+    }
+    .nav-list-menu li a:hover {
+        padding: 5px 30px;
+        transition: 0.4s;
+        color: var(--color-titulos);
+        background: rgba(138, 171, 214, 0.302);
+    }
+    .nav-list-menu li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .logo {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:858px) and (orientation:landscape) {
+    .nav-list-menu li {
+        margin: 5px 0 0 0;
+    }
+    .nav-list-menu {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+/*--------------------------------------------*/
+
+/* generales por clase */
 
 .titulo {
     color: var(--color-titulos);
     font-weight: bold;
 }
-
-/*nth-child(#) representa al elemento li en la posicion #*/
 
 .motivo {
     font-weight: lighter;
@@ -79,31 +179,9 @@ a {
     text-align: justify;
 }
 
-iframe {
-    height: 31em;
-    width: 34em
-}
-
-#contacto p {
-    font-size: 9em;
-}
-
 .img-info {
     width: 400px;
     height: 300px;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: var(--color-principal);
-}
-
-footer p {
-    padding: 15px;
-    text-align: center;
 }
 
 .icons {
@@ -113,6 +191,31 @@ footer p {
 
 .direccion {
     color: var(--color-secundario);
+}
+
+/* tags html*/
+
+iframe {
+    height: 31em;
+    width: 34em
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    background: var(--color-principal);
+}
+
+footer p {
+    padding: 15px;
+    text-align: center;
+}
+
+#contacto p {
+    font-size: 9em;
 }
 
 /*reutilizables*/
@@ -140,4 +243,12 @@ footer p {
 
 .margin {
     margin: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 40px;
+}
+
+.margin-top {
+    margin-top: 52px;
 }

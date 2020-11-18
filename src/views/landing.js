@@ -22,9 +22,29 @@ export default () => {
             <img class="img-info" src="../assets/prevencion.png" alt="medidas-prevención">
         </section>
 
-        <section class="section flex" id="servicios">
-            <img src="" alt="">
-            <p></p>
+        <section class=" flex" id="servicios">
+        <p>Servicios</p>
+        <div class=" flex servicios">
+        <div class="div-cada-servicio"> 
+        <img class="icons" src="../assets/fa-solid_tractor.svg" alt="icon-tractor">
+        <p>Alquiler de máquinas</p>
+        </div>
+
+        <div class="div-cada-servicio">
+         <img class="icons" src="../assets/construccion.png" alt="icon-construccion">
+        <p>Construcción</p>
+        </div>
+
+        <div class="div-cada-servicio"> 
+        <img class="icons" src="../assets/mueble.png" alt="icon-muebles">
+        <p>Mueblería</p>
+        </div>
+
+        <div class="div-cada-servicio"> 
+        <img class="icons" src="../assets/gasfiteria.svg" alt="icon-gasfiteria">
+        <p>Gasfitería</p>
+        </div>
+        </div>  
         </section>
     `
     const divElement = document.createElement('div')

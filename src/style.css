@@ -87,9 +87,6 @@ ul.show {
 }
 
 @media screen and (max-width:858px) {
-    body {
-        width: 100vw;
-    }
     .section {
         flex-direction: row;
         flex-wrap: wrap;
@@ -141,6 +138,9 @@ ul.show {
         font-size: 20px;
         padding: 15px;
     }
+    footer p {
+        font-size: x-small;
+    }
 }
 
 @media screen and (max-width:858px) and (orientation:landscape) {
@@ -157,6 +157,12 @@ ul.show {
 
 /* generales por clase */
 
+.contenedor-general {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
 .titulo {
     color: var(--color-titulos);
     font-weight: bold;
@@ -169,22 +175,26 @@ ul.show {
 }
 
 .section {
+    box-shadow: 2px 15px 70px 2px rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.7);
     border-top: 2px solid var(--color-secundario);
     margin: 5px 0;
+    width: 55%;
+    align-self: center;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .section p:nth-child(1) {
+    padding: 20px 28px 0px 25px;
     text-align: justify;
-    padding-left: 40px;
     font-weight: bold;
     color: var( --color-titulos);
 }
 
 .section p:nth-child(2) {
-    padding: 10px 40px;
+    padding: 22px 27px 40px;
     text-align: justify;
 }
 

@@ -29,5 +29,6 @@ export default () => {
     `
     const divElement = document.createElement('div')
     divElement.innerHTML = landingPage;
+    divElement.className = ("contenedor-general")
     return divElement;
 }

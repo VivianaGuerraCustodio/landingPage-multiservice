@@ -4,5 +4,6 @@ export default () => {
     `
     const divElement = document.createElement('div')
     divElement.innerHTML = galeryViews;
+    divElement.className = ("contenedor-general")
     return divElement;
 }

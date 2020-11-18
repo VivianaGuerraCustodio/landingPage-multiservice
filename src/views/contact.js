@@ -29,5 +29,6 @@ export default () => {
     `
     const divElement = document.createElement('div')
     divElement.innerHTML = contactView;
+    divElement.className = ("contenedor-general")
     return divElement;
 }

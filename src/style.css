@@ -90,6 +90,14 @@ ul.show {
     body {
         width: 100vw;
     }
+    .section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section .img-info {
+        max-width: 100%;
+        height: auto;
+    }
     .nav-menu {
         height: 65px;
     }
@@ -164,6 +172,7 @@ ul.show {
     border-top: 2px solid var(--color-secundario);
     margin: 5px 0;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 

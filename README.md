@@ -24,9 +24,9 @@ Para este proyecto usé Figma,  Html5 , Css3 , Javascript , Git , Github pages <
 <br>
 · <strong>Javascript </Strong> ✨ Usé templates strings y el landing page es una SPA ¿Qué es una SPA? es una web app de una sola página , quiere decir que al cambiar de sección la pagina no se recarga y trabaja mediante rutas . El contenedor principal se <em>"limpia"</em> cada que cambia la ruta y en ese contenedor de <em>"pintan"</em> los datos de esa ruta. <br>
 <br>
-· <strong>Css3 </Strong> ✨ Para que la página sea adaptable en diferentes dispositivosutilicé media queries y flexbox.
+· <strong>Css3 </Strong> ✨ Para que la página sea adaptable en diferentes dispositivos utilicé media queries(@media) y flexbox (align, flex-direction ,flex-flow ).
 </p> <br>
-· <strong>Git | Github pages </Strong> ✨ en el controlador de versiones usé los comandos básicos : git add NAME FILE , git commit -m'COMENTARIO DEL CAMBIO QUE SE REALIZÓ' , git push origin NOMBRE DE LA RAMA , git branch gh-pages (creacion de la rama para poder hacer deploy) , git checkout gh-pages (nos movemos a esa rama) , git pull origin main (es la rama principal que se crea por defaul al iniciar el proyecto) , git push origin gh-pages .
+· <strong>Git | Github pages </Strong> ✨ en el controlador de versiones usé los comandos básicos : git add NAME FILE , git commit -m'COMENTARIO DEL CAMBIO QUE SE REALIZÓ' , git push origin NOMBRE DE LA RAMA , git branch gh-pages (creacion de la rama para poder hacer deploy) , git checkout gh-pages (nos movemos a esa rama) , git pull origin main (es la rama principal que se crea por default al iniciar el proyecto y con este comando bajamos los cambios de esa rama) , git push origin gh-pages (subimos nuestros cambios a esa rama) . 
 <br>
 <p>URL del landing desplegado en github : <a href="https://vivianaguerracustodio.github.io/landingPage-multiservice/src/"> Multiservicios Vivirahsna </a> </p>
 <br>

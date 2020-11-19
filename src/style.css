@@ -161,6 +161,7 @@ ul.show {
 /* generales por clase */
 
 .contenedor-general {
+    width: 100%;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
@@ -224,6 +225,24 @@ ul.show {
     padding: 10px;
 }
 
+.div-cada-servicio:hover {
+    margin: 20px auto;
+    transition: all .5s;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(254, 144, 1, 0.337);
+}
+
+/*.div-cada-servicio p:hover {
+    color: #fff;
+    
+} */
+
+.icon-red-social {
+    width: 50px;
+}
+
 .section p:nth-child(1) {
     font-size: 30px;
     padding: 20px 28px 0px 25px;
@@ -249,6 +268,11 @@ ul.show {
     align-self: center;
     border-radius: 150px;
     border: 5px dotted rgb(254, 143, 1);
+}
+
+.icons:hover {
+    width: 140px;
+    border: 5px dotted rgb(255, 255, 255);
 }
 
 .direccion {

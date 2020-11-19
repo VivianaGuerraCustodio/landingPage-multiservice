@@ -5,13 +5,13 @@ export default () => {
                 <div class="form">
                     <form class="flex column" action="submit">
                         <p>Nombre y Apellido</p>
-                        <input type="text" placeholder="Fernando Terán">
+                        <input type="text" placeholder="Fernando Cerrón" required>
                         <p>Correo</p>
-                        <input type="email" id="email-contacto" placeholder="fernando@gmail.com">
+                        <input type="email" id="email-contacto" placeholder="fernando@gmail.com" required>
                         <p>Celular</p>
-                        <input type="text" id="celular-contacto" placeholder="982 123 000">
+                        <input type="text" id="celular-contacto" placeholder="982 123 000" required>
                         <p>Motivo :</p>
-                        <textarea type="text" placeholder = " Ejemplo : Necesito una proforma "></textarea>
+                        <textarea type="text" placeholder = " Ejemplo : Necesito una proforma " required></textarea>
                         <button class="margin-top-bottom" type="submit"> Enviar </button>
                     </form>
                </div>

@@ -18,9 +18,9 @@ export default () => {
                     912321123<br>
                 </div>
                 <div class="flex row margin-top-bottom">
-                    <img class="icons" src="../assets/facebook.svg" alt="facebook">
-                    <img class="icons" src="../assets/whatsapp.svg" alt="whatsapp">
-                    <img class="icons" src="../assets/gmail.png" alt="gmail">
+                    <img class="icon-red-social" src="../assets/facebook.svg" alt="facebook">
+                    <img class="icon-red-social" src="../assets/whatsapp.svg" alt="whatsapp">
+                    <img class="icon-red-social" src="../assets/gmail.png" alt="gmail">
                 </div>
             </div>
 

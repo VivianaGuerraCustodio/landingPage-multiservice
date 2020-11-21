@@ -11,13 +11,12 @@ const validateEmail = (e) => {
 };
 const validateTel = (e) => {
     const { value: string, id } = e.target;
-    const pattern = /^([9]{1})[0-9]{8}$/ // /(\+51)\s?\d{2}\s?-?\d{4}\s?-?\d{4}$/;
+    const pattern = /^([9]{1})[0-9]{8}$/
     validate(pattern, string, `l${id}`);
 };
 
 // validatePassword()
 const validate = (pattern, string, id) => {
-    console.log(pattern, string, id);
     pattern.test(string)
         ? (document.getElementById(id).innerHTML = "")
         : (document.getElementById(id).innerHTML = "Campo invalido");

@@ -9,16 +9,16 @@ export default () => {
     <section id="contacto" class="margin">
         <div class="flex column div-center">
                 <div class="form">
-                    <form class="flex column" action="submit">
-                        <p>Nombre y Apellido</p> <label id="lnombre"></label>
-                        <input id="nombre" type="text" placeholder="Fernando Cerrón">
-                        <p>Correo</p> <label id="lmail"></label>
-                        <input type="text" id="mail" placeholder="fernando@gmail.com" >
-                        <p>Celular</p> <label id="ltel"></label>
-                        <input type="text" id="tel" placeholder="982 123 000" >
+                    <form class="flex column" method="post" action="./php/email.php">
+                        <p>Nombre y Apellido</p> <label class="text-danger" id="lnombre"></label>
+                        <input id="nombre" name="Nombre" type="text" required placeholder="Fernando Cerrón">
+                        <p>Correo</p> <label class="text-danger" id="lmail"></label>
+                        <input type="text" name ="Email" id="mail" required placeholder="fernando@gmail.com" >
+                        <p>Celular</p> <label class="text-danger" id="ltel"></label>
+                        <input name="Telefono" type="text" id="tel" required placeholder="982 123 000" >
                         <p>Motivo :</p>
-                        <textarea type="text" placeholder = " Ejemplo : Necesito una proforma " required></textarea>
-                        <button class="margin-top-bottom" type="submit"> Enviar </button>
+                        <textarea name="Mensaje" type="text" placeholder = " Ejemplo : Necesito una proforma " required></textarea>
+                        <button class="margin-top-bottom" required type="submit"> Enviar </button>
                     </form>
                </div>
                 <div class="flex column div-center margin-top-bottom">
@@ -40,9 +40,9 @@ export default () => {
     divElement.innerHTML = contactView;
     divElement.className = ("contenedor-general")
 
-    const validate_nombre = document.getElementById("nombre");
-    const validate_mail = document.getElementById("mail");
-    const validate_tel = document.getElementById("tel");
+    const validate_nombre = divElement.querySelector("#nombre");
+    const validate_mail = divElement.querySelector("#mail");
+    const validate_tel = divElement.querySelector("#tel");
 
     if (validate_nombre, validate_mail, validate_tel) {
         validate_nombre.addEventListener("blur", validateNA);

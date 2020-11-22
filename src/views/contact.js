@@ -9,7 +9,7 @@ export default () => {
     <section id="contacto" class="margin">
         <div class="flex column div-center">
                 <div class="form">
-                    <form class="flex column" method="post" action="./php/email.php">
+                    <form class="flex column" method="POST" action="https://formspree.io/f/mpzolvje">
                         <p>Nombre y Apellido</p> <label class="text-danger" id="lnombre"></label>
                         <input id="nombre" name="Nombre" type="text" required placeholder="Fernando Cerrón">
                         <p>Correo</p> <label class="text-danger" id="lmail"></label>
@@ -48,9 +48,8 @@ export default () => {
         validate_nombre.addEventListener("blur", validateNA);
         validate_mail.addEventListener("blur", validateEmail)
         validate_tel.addEventListener("blur", validateTel)
+
     }
-
-
 
     return divElement;
 }

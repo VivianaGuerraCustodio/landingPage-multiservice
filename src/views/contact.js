@@ -25,7 +25,7 @@ export default () => {
                    <div class="column">
                      <p>También puedes encontrarnos por aquí</p>
                    </div>
-                  <div class="column margin-top-bottom">
+                  <div class="column redes margin-top-bottom">
                      <img class="icon-red-social" src="../assets/facebook.svg" alt="facebook">
                      <img class="icon-red-social" src="../assets/whatsapp.svg" alt="whatsapp">
                      <img class="icon-red-social" src="../assets/gmail.png" alt="gmail">

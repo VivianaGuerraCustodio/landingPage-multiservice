@@ -296,3 +296,31 @@ button[type="submit"]:hover {
     font-weight: bold;
     border: none;
 }
+
+#div_img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.container_img {
+    width: 340px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 0px 9px var(--color-alternativo);
+}
+
+.galery_img {
+    padding: 5px;
+    width: 300px;
+}
+.redes{
+    justify-content: center;
+}

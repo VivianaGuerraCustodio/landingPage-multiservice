@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-hackspace",
+  "version": "1.0.0",
+  "description": "Landing page simple para una empresa multiservicios",
+  "main": "index.html",
+  "dependencies": {
+    "nodemailer": "^6.4.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivianaGuerraCustodio/landingPage-multiservice.git"
+  },
+  "keywords": [
+    "css3",
+    "html5",
+    "spa",
+    "js",
+    "nodemailer"
+  ],
+  "author": "VivianaGuerraCustodio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VivianaGuerraCustodio/landingPage-multiservice/issues"
+  },
+  "homepage": "https://github.com/VivianaGuerraCustodio/landingPage-multiservice#readme"
+}

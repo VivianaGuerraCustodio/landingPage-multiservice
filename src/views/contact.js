@@ -26,9 +26,10 @@ export default () => {
                      <p>También puedes encontrarnos por aquí</p>
                    </div>
                   <div class="column redes margin-top-bottom">
-                     <img class="icon-red-social" src="../assets/facebook.svg" alt="facebook">
-                     <img class="icon-red-social" src="../assets/whatsapp.svg" alt="whatsapp">
-                     <img class="icon-red-social" src="../assets/gmail.png" alt="gmail">
+                    <img class="icon-red-social" src="../assets/facebook.svg" alt="facebook">
+                    <a href='https://wa.link/6y3c8g' target="_blank" > <img class="icon-red-social" src="../assets/whatsapp.svg" alt="whatsapp"></a> 
+                    <a href="mailto:vivianaguerracustodio@gmail.com?Subject=Interesadx%20en%20tu%20perfil%20profesional"
+                    target="_blank"><img class="icon-red-social" src="../assets/gmail.png" alt="gmail"></a>
                   </div>
                     
                 </div>
